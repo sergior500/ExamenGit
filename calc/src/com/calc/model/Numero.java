@@ -15,7 +15,8 @@ public abstract class Numero {
 		setValorEntero(value);
 	}
 
-	
+	/**
+	 * Constructor en la clase abstracta "Numero"*/
 	public Numero(int valor) {
 		this(valor, Base.DECIMAL);
 	}
@@ -38,7 +39,8 @@ public abstract class Numero {
 		return Objects.hash(base, valorEntero);
 	}
 
-
+	/**
+	 * Equals donde utilizamos ambos atributos para realizar la operación.*/
 	@Override
 	public boolean equals(Object obj) {
 		return this==obj ||
@@ -47,7 +49,8 @@ public abstract class Numero {
 				&& ((Numero) obj).valorEntero==this.valorEntero;
 	}
 
-
+	/**
+	 * toString de la clase abstracta "Numero"*/
 	@Override
 	public String toString() {
 		return "Numero de tipo "+ getClass().getSimpleName()

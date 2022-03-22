@@ -8,7 +8,8 @@ public class Aritmetica {
 
 	public Aritmetica() {}
 
-	
+/**
+ *Operacion de suma.*/	
 	public Numero suma(Numero n1, Numero n2) {
 		Numero resultado = null;
 		
@@ -36,7 +37,8 @@ public class Aritmetica {
 		
 		return resultado;
 	}
-	
+	/**
+	 * Operacion de resta.*/
 	public Numero resta(Numero n1, Numero n2) {
 		Numero sustraer = null;
 		if (n2 instanceof Decimal) {
@@ -48,7 +50,8 @@ public class Aritmetica {
 		return suma(n1, sustraer);
 	}
 	
-	
+	/**
+	 * Calcular la media.*/
 	public Numero calcularMedia(Object[] objs) {
 		Numero acumulador = new Entero(0);
 		
