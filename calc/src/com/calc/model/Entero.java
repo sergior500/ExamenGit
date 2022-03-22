@@ -33,7 +33,9 @@ public class Entero extends Numero {
 				}
 			}			
 		}
-		
+		/**
+		 * En este apartado lanzamos una exception propia. Según el "dato incorrecto" introducido.
+		 */
 		if(valorEntero > VALOR_MAXIMO) {
 			throw new NumeroException("El valor introducido es mayor de lo permitido");
 		}else if(valorEntero < VALOR_MINIMO) {
